@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5716ee66-6890-48ec-9937-a12c8eea7eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/BrandRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/ModelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/ModelEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/ModelEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/brands.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/brands.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/brands.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/brands.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#496#497#0" expanded="true" />
@@ -39,28 +37,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="375">
+              <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state relative-caret-position="204">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            <state relative-caret-position="259">
+              <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +132,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -123,14 +159,15 @@
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/HomeController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/brands.html" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/BrandRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/ModelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/ModelEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/brands.html" />
       </list>
     </option>
   </component>
@@ -250,6 +287,19 @@
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobilelele" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bg" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -263,6 +313,19 @@
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mobilelele" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bg" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobilelele" type="b2602c69:ProjectViewProjectNode" />
@@ -376,7 +439,7 @@
       <workItem from="1611887668462" duration="2625000" />
       <workItem from="1611944633139" duration="1821000" />
       <workItem from="1611946796825" duration="1649000" />
-      <workItem from="1611980972218" duration="4643000" />
+      <workItem from="1611980972218" duration="8832000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1611081138717</created>
@@ -406,15 +469,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611981134175</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Begin DB torture">
+      <created>1611985664171</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611985664171</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35472000" />
+    <option name="totallyTimeSpent" value="39661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -461,7 +530,8 @@
     <MESSAGE value="Added Vehicle Model Entity attempt 2 (git died on me)" />
     <MESSAGE value="Added Offers, Users and Role entities" />
     <MESSAGE value="Added Models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Models" />
+    <MESSAGE value="Begin DB torture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begin DB torture" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml" />
@@ -527,27 +597,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -602,32 +655,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/update.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/BrandRepository.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -693,11 +720,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="259">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
         </state>
       </provider>
     </entry>

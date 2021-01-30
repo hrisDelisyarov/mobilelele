@@ -7,8 +7,8 @@ public class BrandViewModel {
     private String name;
 
     private List<ModelViewModel> models;
-
-    public BrandViewModel(String name, List<ModelViewModel> models) {
+//String name, List<ModelViewModel> models
+    public BrandViewModel() {
         this.name = name;
         this.models = models;
     }
