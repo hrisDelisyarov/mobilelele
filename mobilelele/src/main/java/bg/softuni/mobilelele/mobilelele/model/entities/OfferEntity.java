@@ -1,7 +1,7 @@
-package bg.softuni.mobilelele.mobilelele.entities;
+package bg.softuni.mobilelele.mobilelele.model.entities;
 
-import bg.softuni.mobilelele.mobilelele.entities.enums.OffersEngineEnum;
-import bg.softuni.mobilelele.mobilelele.entities.enums.TransmissionTypeEnum;
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.OffersEngineEnum;
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.TransmissionTypeEnum;
 
 import javax.persistence.*;
 

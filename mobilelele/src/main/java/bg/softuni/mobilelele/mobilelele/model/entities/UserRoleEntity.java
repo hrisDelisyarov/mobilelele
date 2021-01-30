@@ -1,6 +1,6 @@
-package bg.softuni.mobilelele.mobilelele.entities;
+package bg.softuni.mobilelele.mobilelele.model.entities;
 
-import bg.softuni.mobilelele.mobilelele.entities.enums.UserRolesEnum;
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.UserRolesEnum;
 
 import javax.persistence.*;
 @Entity
