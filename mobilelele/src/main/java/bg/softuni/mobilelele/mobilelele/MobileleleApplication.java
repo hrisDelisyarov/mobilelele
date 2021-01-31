@@ -10,4 +10,7 @@ public class MobileleleApplication {
 		SpringApplication.run(MobileleleApplication.class, args);
 	}
 
+
+	//zdr ko pr
+
 }
