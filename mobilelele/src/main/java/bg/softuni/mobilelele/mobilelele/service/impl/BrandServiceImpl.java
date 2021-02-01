@@ -3,6 +3,7 @@ package bg.softuni.mobilelele.mobilelele.service.impl;
 import bg.softuni.mobilelele.mobilelele.model.entities.BrandEntity;
 import bg.softuni.mobilelele.mobilelele.model.entities.ModelEntity;
 import bg.softuni.mobilelele.mobilelele.model.view.BrandViewModel;
+import bg.softuni.mobilelele.mobilelele.model.view.ModelViewModel;
 import bg.softuni.mobilelele.mobilelele.repository.ModelRepository;
 import bg.softuni.mobilelele.mobilelele.service.BrandService;
 import org.modelmapper.ModelMapper;
@@ -14,7 +15,7 @@ import java.util.Optional;
 
 @Service
 public class BrandServiceImpl implements BrandService {
-
+//TODO: For the love of all holy I need to make this readable, k thx future me
 
     private final ModelRepository modelRepository;
     private final ModelMapper modelMapper;
@@ -38,7 +39,12 @@ public class BrandServiceImpl implements BrandService {
                 BrandViewModel newBrandViewModel = new BrandViewModel();            // <= Create a new Brand from the entity
                 modelMapper.map(brandEntity,newBrandViewModel);          // <= Map the entity into a BrandViewModel
                 brandViewModels.add(newBrandViewModel);              // <= Add the ViewModel to our result list
+                brandViewModelOpt = Optional.of(newBrandViewModel);
             }
+
+            ModelViewModel newModelViewModel = new ModelViewModel();
+            modelMapper.map(modelEntity,newModelViewModel);
+            brandViewModelOpt.get().addModel(newModelViewModel);
         });
 
         return brandViewModels;        // <= return the result list
