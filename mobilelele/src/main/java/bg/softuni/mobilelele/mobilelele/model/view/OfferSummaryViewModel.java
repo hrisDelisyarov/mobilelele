@@ -1,48 +1,31 @@
-package bg.softuni.mobilelele.mobilelele.model.entities;
+package bg.softuni.mobilelele.mobilelele.model.view;
 
+import bg.softuni.mobilelele.mobilelele.model.entities.ModelEntity;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.OffersEngineEnum;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.TransmissionTypeEnum;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.ManyToOne;
 
-@Entity
-@Table(name="offers")
-public class OfferEntity extends BaseEntity {
+public class OfferSummaryViewModel {
 
-    @Column
-    private String description;
 
-    @Enumerated(EnumType.STRING)
     private OffersEngineEnum engine;
 
-    @Column
     private String imageUrl;
 
-    @Column
     private int mileage;
 
-    @Column
     private int price;
 
-    @Enumerated(EnumType.STRING)
     private TransmissionTypeEnum transmission;
 
-    @Column
     private int year;
 
-    @ManyToOne
-    private ModelEntity model;
-            //TODO: Implement users, also add toStrings me
 //    @ManyToOne
-//    private UserEntity seller;
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
+//    private ModelEntity model;
 
     public OffersEngineEnum getEngine() {
         return engine;
@@ -91,20 +74,4 @@ public class OfferEntity extends BaseEntity {
     public void setYear(int year) {
         this.year = year;
     }
-
-    public ModelEntity getModel() {
-        return model;
-    }
-
-    public void setModel(ModelEntity model) {
-        this.model = model;
-    }
-
-//    public UserEntity getSeller() {
-//        return seller;
-//    }
-//
-//    public void setSeller(UserEntity seller) {
-//        this.seller = seller;
-//   }
 }
