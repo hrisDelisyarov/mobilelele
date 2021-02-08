@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5716ee66-6890-48ec-9937-a12c8eea7eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferSummaryViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/OfferRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobilelele.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobilelele.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,10 +33,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+            <state relative-caret-position="471">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#542#543#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,10 +63,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,36 +89,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="522">
+              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,13 +110,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/auth-login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="68">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
               <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#454#455#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#190#191#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,26 +194,35 @@
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/entities/UserEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/entities/enums/unityMovement.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/HomeController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/BrandRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/ModelRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/ModelEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/MobileleleApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/ModelViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/brands.html" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/OfferRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferSummaryViewModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/auth-login.html" />
       </list>
     </option>
   </component>
@@ -297,21 +368,7 @@
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mobilelele" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bg" type="462c0819:PsiDirectoryNode" />
-              <item name="softuni" type="462c0819:PsiDirectoryNode" />
-              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
-              <item name="mobilelele" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mobilelele" type="b2602c69:ProjectViewProjectNode" />
@@ -465,7 +522,19 @@
       <workItem from="1611980972218" duration="9034000" />
       <workItem from="1612036766257" duration="4100000" />
       <workItem from="1612173406598" duration="4616000" />
-      <workItem from="1612277021908" duration="4580000" />
+      <workItem from="1612277021908" duration="5275000" />
+      <workItem from="1612407138961" duration="1093000" />
+      <workItem from="1612416680798" duration="1677000" />
+      <workItem from="1612505680869" duration="588000" />
+      <workItem from="1612517358351" duration="594000" />
+      <workItem from="1612619302171" duration="592000" />
+      <workItem from="1612647834181" duration="595000" />
+      <workItem from="1612690845860" duration="594000" />
+      <workItem from="1612715182528" duration="4614000" />
+      <workItem from="1612776583694" duration="598000" />
+      <workItem from="1612792406949" duration="640000" />
+      <workItem from="1612802418282" duration="594000" />
+      <workItem from="1612808692180" duration="3177000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1611081138717</created>
@@ -537,17 +606,24 @@
       <option name="project" value="LOCAL" />
       <updated>1612180131706</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added Offers Service and View Model(no impl as of yet)">
+      <created>1612282892038</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612282892038</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53159000" />
+    <option name="totallyTimeSpent" value="69210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33825505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.40402684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -598,7 +674,8 @@
     <MESSAGE value="added Brand View Model" />
     <MESSAGE value="added ModelViewModel and thymeleaf black magic. Pls make code more readable at BrandService impl future me" />
     <MESSAGE value="added OffersController" />
-    <option name="LAST_COMMIT_MESSAGE" value="added OffersController" />
+    <MESSAGE value="added Offers Service and View Model(no impl as of yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Offers Service and View Model(no impl as of yet)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml" />
@@ -624,26 +701,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/entities/enums/unityMovement.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserRoleEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -668,16 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/details.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/auth-register.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/auth-login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/offer-add.html">
@@ -721,13 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="94" column="63" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -789,31 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,9 +869,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="36" column="113" selection-start-line="36" selection-start-column="113" selection-end-line="36" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/BrandViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/OfferSummaryViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="-260">
           <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -879,30 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -911,64 +987,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/config/MobileleConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="136">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/brands.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/BrandService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/BrandsController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="471">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/BrandServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="188">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/auth-login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>

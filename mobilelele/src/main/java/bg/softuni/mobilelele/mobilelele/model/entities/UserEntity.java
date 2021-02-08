@@ -9,6 +9,17 @@ public class UserEntity extends BaseEntity {
     @Column(unique = true, nullable = false)
     private String username;
 
+    @Column
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Column(nullable = false)
     private String firstName;
 
@@ -70,5 +81,18 @@ public class UserEntity extends BaseEntity {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "username='" + username + '\'' +
+                ", password='N/A" + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", isActive=" + isActive +
+                ", role=" + role +
+                ", imageUrl='" + imageUrl + '\'' +
+                '}';
     }
 }

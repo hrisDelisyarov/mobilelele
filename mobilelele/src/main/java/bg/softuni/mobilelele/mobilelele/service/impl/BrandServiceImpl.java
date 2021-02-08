@@ -34,7 +34,7 @@ public class BrandServiceImpl implements BrandService {
             Optional<BrandViewModel> brandViewModelOpt = findByName(brandViewModels, brandEntity.getName());     // <= Check if we
             // already have a Brand with name  {$} in our result list
 
-            if (!brandViewModelOpt.isPresent())             // <= If the Brand is not part of the result list
+            if (!brandViewModelOpt.isPresent())             // <= If the Brand is not part of the result list ...
             {
                 BrandViewModel newBrandViewModel = new BrandViewModel();            // <= Create a new Brand from the entity
                 modelMapper.map(brandEntity,newBrandViewModel);          // <= Map the entity into a BrandViewModel
