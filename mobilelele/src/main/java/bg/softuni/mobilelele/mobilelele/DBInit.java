@@ -4,10 +4,8 @@ import bg.softuni.mobilelele.mobilelele.model.entities.*;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.ModelCategoryEnum;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.OffersEngineEnum;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.TransmissionTypeEnum;
-import bg.softuni.mobilelele.mobilelele.repository.BrandRepository;
-import bg.softuni.mobilelele.mobilelele.repository.ModelRepository;
-import bg.softuni.mobilelele.mobilelele.repository.OfferRepository;
-import bg.softuni.mobilelele.mobilelele.repository.UserRepository;
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.UserRolesEnum;
+import bg.softuni.mobilelele.mobilelele.repository.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -23,15 +21,18 @@ public class DBInit implements CommandLineRunner {
     private final OfferRepository offerRepository;
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
+    private final UserRoleRepository userRoleRepository;
 
     public DBInit(ModelRepository modelRepository, BrandRepository brandRepository,
-                  OfferRepository offerRepository, PasswordEncoder passwordEncoder, UserRepository userRepository) {
+                  OfferRepository offerRepository, PasswordEncoder passwordEncoder,
+                  UserRepository userRepository, UserRoleRepository userRoleRepository) {
         this.modelRepository = modelRepository;
         this.brandRepository = brandRepository;
 
         this.offerRepository = offerRepository;
         this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
+        this.userRoleRepository = userRoleRepository;
     }
    // @Transactional
     @Override
@@ -51,18 +52,37 @@ public class DBInit implements CommandLineRunner {
         ModelEntity fiesta = initFiesta(ford);
         ModelEntity civic = initCivic(honda);
         createOffer("https://www.gannett-cdn.com/presto/2020/04/13/PDTN/baf39f3d-aebb-4c59-8e98-711fdfb3b5c4-fiesta_fr3-4.JPG", fiesta);
-        initAdmin();
+        initUsers();
+
     }
 
-    private void initAdmin(){
+    private void initUsers(){
+        UserRoleEntity adminRole = new UserRoleEntity();
+        adminRole.setRole(UserRolesEnum.ADMIN);
+        UserRoleEntity userRole = new UserRoleEntity();
+        userRole.setRole(UserRolesEnum.USER);
+
+        userRoleRepository.saveAll(List.of(adminRole,userRole));
+
         UserEntity admin = new UserEntity();
         admin.setFirstName("Petar");
         admin.setLastName("Dimitrov");
         admin.setUsername("admin");
         admin.setPassword(passwordEncoder.encode("parola"));
         setTimeStamps(admin);
+        admin.setRole(List.of(adminRole,userRole));
         userRepository.save(admin);
+        UserEntity user = new UserEntity();
+        user.setFirstName("Gosho");
+        user.setLastName("Georgiev");
+        user.setUsername("user");
+        user.setPassword(passwordEncoder.encode("parola"));
+        setTimeStamps(user);
+        user.setRole(List.of(userRole));
+        userRepository.save(user);
     }
+
+
         private void createOffer(String imageUrl, ModelEntity modelEntity){
 
             OfferEntity offer = new OfferEntity();

@@ -4,7 +4,7 @@ import bg.softuni.mobilelele.mobilelele.model.entities.enums.UserRolesEnum;
 
 import javax.persistence.*;
 @Entity
-@Table(name="UserRoles")
+@Table(name="user_roles")
 public class UserRoleEntity  {
 
     @Id
@@ -14,11 +14,11 @@ public class UserRoleEntity  {
     @Enumerated(EnumType.STRING)
     private UserRolesEnum role;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
