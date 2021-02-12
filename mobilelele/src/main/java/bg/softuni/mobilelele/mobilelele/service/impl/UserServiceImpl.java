@@ -1,13 +1,17 @@
 package bg.softuni.mobilelele.mobilelele.service.impl;
 
 import bg.softuni.mobilelele.mobilelele.model.entities.UserEntity;
+import bg.softuni.mobilelele.mobilelele.model.entities.UserRoleEntity;
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.UserRolesEnum;
 import bg.softuni.mobilelele.mobilelele.repository.UserRepository;
 import bg.softuni.mobilelele.mobilelele.security.CurrentUser;
 import bg.softuni.mobilelele.mobilelele.service.UserService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -33,8 +37,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void loginUser(String username) {
+        UserEntity user = userRepository.findByUsername(username).orElseThrow();
+        List<UserRolesEnum> roles = user.getRole()
+                .stream()
+                .map(UserRoleEntity::getRole)
+                .collect(Collectors.toList());
         currentUser.setAnonymous(false);
-        currentUser.setName(username);
+        currentUser.setName(user.getUsername());
+        currentUser.setUserRoles(roles);
+
     }
 
     @Override

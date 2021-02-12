@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5716ee66-6890-48ec-9937-a12c8eea7eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobilelele.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobilelele.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserRoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserRoleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/security/CurrentUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,6 +336,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MobileleleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mobilelele" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="bg.softuni.mobilelele.mobilelele.MobileleleApplication" />
@@ -396,7 +409,7 @@
       <workItem from="1613062838558" duration="1818000" />
       <workItem from="1613082019191" duration="3029000" />
       <workItem from="1613127050775" duration="3191000" />
-      <workItem from="1613141487800" duration="1817000" />
+      <workItem from="1613141487800" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1611081138717</created>
@@ -496,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613084462356</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="roles implemented">
+      <created>1613155498452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1613155498452</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -561,7 +581,8 @@
     <MESSAGE value="implemented user login" />
     <MESSAGE value="NavBar turned into a Thymeleaf Fragment" />
     <MESSAGE value="logout implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout implemented" />
+    <MESSAGE value="roles implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="roles implemented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml" />

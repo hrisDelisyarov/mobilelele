@@ -1,5 +1,7 @@
 package bg.softuni.mobilelele.mobilelele.model.entities;
 
+import bg.softuni.mobilelele.mobilelele.model.entities.enums.UserRolesEnum;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -12,14 +14,6 @@ public class UserEntity extends BaseEntity {
     @Column
     private String password;
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Column(nullable = false)
     private String firstName;
 
@@ -28,11 +22,21 @@ public class UserEntity extends BaseEntity {
 
     private boolean isActive;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<UserRoleEntity> role;
 
     @Column
     private String imageUrl;
+
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
 
     public String getUsername() {
