@@ -14,6 +14,17 @@ public class BaseEntity {
     @Column(nullable = false)
     protected Instant modified;
 
+    @PrePersist
+    public void prePersist() {
+        setCreated(Instant.now());
+        setModified(Instant.now());
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        setModified(Instant.now());
+    }
+
     public Long getId() {
         return id;
     }

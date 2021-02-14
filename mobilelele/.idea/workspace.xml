@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5716ee66-6890-48ec-9937-a12c8eea7eb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/OfferServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/validation/YearPastOrPresent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/validation/YearPastOrPresentValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/UsersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobilelele.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mobilelele.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserLoginServiceModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/ModelViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/ModelViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/offer-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/offer-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/offer-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/offer-add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +35,8 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -334,7 +344,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunManager">
     <configuration name="MobileleleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -398,7 +408,10 @@
       <workItem from="1613082019191" duration="3029000" />
       <workItem from="1613127050775" duration="3191000" />
       <workItem from="1613141487800" duration="4942000" />
-      <workItem from="1613209083584" duration="4811000" />
+      <workItem from="1613209083584" duration="6205000" />
+      <workItem from="1613256677468" duration="1596000" />
+      <workItem from="1613307838933" duration="3903000" />
+      <workItem from="1613326366897" duration="6592000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1611081138717</created>
@@ -512,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613157220903</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Login validation">
+      <created>1613229188781</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613229188781</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -579,7 +599,8 @@
     <MESSAGE value="logout implemented" />
     <MESSAGE value="roles implemented" />
     <MESSAGE value="roles implemented (admin menu hidden for non admins)" />
-    <option name="LAST_COMMIT_MESSAGE" value="roles implemented (admin menu hidden for non admins)" />
+    <MESSAGE value="Login validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login validation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml" />

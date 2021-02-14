@@ -4,6 +4,7 @@ import bg.softuni.mobilelele.mobilelele.model.entities.enums.OffersEngineEnum;
 import bg.softuni.mobilelele.mobilelele.model.entities.enums.TransmissionTypeEnum;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name="offers")
@@ -22,7 +23,7 @@ public class OfferEntity extends BaseEntity {
     private int mileage;
 
     @Column
-    private int price;
+    private BigDecimal price;
 
     @Enumerated(EnumType.STRING)
     private TransmissionTypeEnum transmission;
@@ -33,8 +34,8 @@ public class OfferEntity extends BaseEntity {
     @ManyToOne
     private ModelEntity model;
             //TODO: Implement users, also add toStrings me
-//    @ManyToOne
-//    private UserEntity seller;
+    @ManyToOne
+    private UserEntity user;
 
     public String getDescription() {
         return description;
@@ -68,11 +69,11 @@ public class OfferEntity extends BaseEntity {
         this.mileage = mileage;
     }
 
-    public int getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 
@@ -100,11 +101,30 @@ public class OfferEntity extends BaseEntity {
         this.model = model;
     }
 
-//    public UserEntity getSeller() {
-//        return seller;
-//    }
-//
-//    public void setSeller(UserEntity seller) {
-//        this.seller = seller;
-//   }
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public OfferEntity setUser(UserEntity user) {
+        this.user = user;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "OfferEntity{" +
+                "id=" + id +
+                ", created=" + created +
+                ", modified=" + modified +
+                ", description='" + description + '\'' +
+                ", engine=" + engine +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", mileage=" + mileage +
+                ", price=" + price +
+                ", transmission=" + transmission +
+                ", year=" + year +
+                ", model=" + model +
+                ", user=" + user +
+                '}';
+    }
 }

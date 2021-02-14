@@ -10,6 +10,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
 
@@ -89,7 +90,7 @@ public class DBInit implements CommandLineRunner {
             offer.setEngine(OffersEngineEnum.GASOLINE);
             offer.setImageUrl(imageUrl);
            offer.setMileage(80000);
-           offer.setPrice(10000);
+           offer.setPrice(new BigDecimal(10000));
            offer.setYear(2019);
            offer.setDescription("Discount ! 101% off!");
            offer.setTransmission(TransmissionTypeEnum.MANUAL);
