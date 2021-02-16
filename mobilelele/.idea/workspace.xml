@@ -5,21 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5716ee66-6890-48ec-9937-a12c8eea7eb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/OfferServiceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/validation/YearPastOrPresent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/validation/YearPastOrPresentValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/UserRegisterServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/DBInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/OfferEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/ModelViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/view/ModelViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/entities/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/OfferServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/model/service/OfferServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/repository/UserRoleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/OfferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/OfferServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/OffersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bg/softuni/mobilelele/mobilelele/web/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/offer-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/offer-add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/auth-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/auth-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/offers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/offers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/auth-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/auth-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/offer-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/offer-add.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -411,7 +417,10 @@
       <workItem from="1613209083584" duration="6205000" />
       <workItem from="1613256677468" duration="1596000" />
       <workItem from="1613307838933" duration="3903000" />
-      <workItem from="1613326366897" duration="6592000" />
+      <workItem from="1613326366897" duration="10978000" />
+      <workItem from="1613395394505" duration="14027000" />
+      <workItem from="1613470627261" duration="3187000" />
+      <workItem from="1613478552661" duration="3772000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1611081138717</created>
@@ -532,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613229188781</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Creating Offers Implemented">
+      <created>1613335939828</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1613335939828</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -600,7 +616,8 @@
     <MESSAGE value="roles implemented" />
     <MESSAGE value="roles implemented (admin menu hidden for non admins)" />
     <MESSAGE value="Login validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login validation" />
+    <MESSAGE value="Creating Offers Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Offers Implemented" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.xml" />

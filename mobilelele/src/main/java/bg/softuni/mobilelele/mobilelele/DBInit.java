@@ -71,7 +71,7 @@ public class DBInit implements CommandLineRunner {
         admin.setUsername("admin");
         admin.setPassword(passwordEncoder.encode("parola"));
         setTimeStamps(admin);
-        admin.setRole(List.of(adminRole,userRole));
+        admin.setRoles(List.of(adminRole,userRole));
         userRepository.save(admin);
         UserEntity user = new UserEntity();
         user.setFirstName("Gosho");
@@ -79,7 +79,7 @@ public class DBInit implements CommandLineRunner {
         user.setUsername("user");
         user.setPassword(passwordEncoder.encode("parola"));
         setTimeStamps(user);
-        user.setRole(List.of(userRole));
+        user.setRoles(List.of(userRole));
         userRepository.save(user);
     }
 

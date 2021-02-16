@@ -10,8 +10,12 @@ import bg.softuni.mobilelele.mobilelele.security.CurrentUser;
 import bg.softuni.mobilelele.mobilelele.service.OfferService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import java.util.Optional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class OfferServiceImpl implements OfferService {
 
@@ -35,7 +39,18 @@ public class OfferServiceImpl implements OfferService {
     }
     @Override
     public List<OfferSummaryViewModel> getAllOffers() {
-        return null;
+        List<OfferEntity> offersDb =offerRepository.findAll();
+        List<OfferSummaryViewModel> result = new ArrayList<>();
+        if (!offersDb.isEmpty()){
+            for (OfferEntity offer : offersDb
+            ) {
+                OfferSummaryViewModel model = new OfferSummaryViewModel();
+                modelMapper.map(offer,model);
+                result.add(model);
+            }
+
+        }
+        return result;
     }
 
     @Override
@@ -44,6 +59,11 @@ public class OfferServiceImpl implements OfferService {
         OfferEntity offerEntity=newEntity(model);
         OfferEntity savedEntity=offerRepository.save(offerEntity);
         return savedEntity.getId();
+    }
+
+    @Override
+    public void delete(Long id) {
+        offerRepository.deleteById(id);
     }
 
     private OfferEntity newEntity(OfferServiceModel model){

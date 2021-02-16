@@ -7,10 +7,11 @@ import bg.softuni.mobilelele.mobilelele.service.BrandService;
 import bg.softuni.mobilelele.mobilelele.service.OfferService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/offers")
@@ -44,13 +45,35 @@ public class OffersController {
         model.addAttribute("transmissions", TransmissionTypeEnum.values());
         return "offer-add";
     }
+    //TODO: DETAILS MAN
+    @GetMapping("/offer/{id}")
+    public String offerDetails(@PathVariable String id,
+                               Model model){
+        model.addAttribute("id",id);
+        return "details";
+    }
 
-    @PostMapping("/offers/add")
-    public String createOffer(@ModelAttribute OfferServiceModel offerModel){
-
-        offerService.save(offerModel);
-
-        System.out.println(offerModel.toString());
+    @DeleteMapping("/offer/{id}")
+    public String offerDelete(@PathVariable Long id,
+                               Model model) {
+        offerService.delete(id);
         return "redirect:/offers/all";
+    }
+    @PostMapping("/offers/add")
+    public String createOffer(@Valid @ModelAttribute OfferServiceModel offerModel,
+                              BindingResult bindingResult,
+                              RedirectAttributes redirectAttributes)
+    {
+        if (bindingResult.hasErrors()) {
+            redirectAttributes.addFlashAttribute("offerModel", offerModel);
+            redirectAttributes.addFlashAttribute("org.springframework.validation.BindingResult.offerModel", bindingResult);
+
+
+            return "redirect:/offers/add";
+        }
+        Long newOfferId=offerService.save(offerModel);
+
+        //System.out.println(offerModel.toString());
+        return "redirect:/offers/offer/" + newOfferId;
     }
 }

@@ -14,10 +14,12 @@ public class OfferServiceModel {
     @NotNull
     private OffersEngineEnum engine;
     @NotNull
+    @NotEmpty
     private String imageUrl;
     @NotNull
     @Positive
     private Integer mileage;
+    @NotNull
     @DecimalMin("100")
     private BigDecimal price;
     @NotNull

@@ -21,7 +21,10 @@
 <div class="container-fluid">
         <h2 class="text-center text-white mt-5">All Offers</h2>
         <div class="offers row mx-auto d-flex flex-row justify-content-center">
-            <div class="offer card col-sm-6 col-md-3  col-lg-2 m-1 p-0">
+            <!-- The next line is the div responsible for every offer -->
+            <div th:each="offer : ${offers}"
+                 th:object="${offer}"
+                 class="offer card col-sm-6 col-md-3  col-lg-2 m-1 p-0">
                 <div class="card-img-top-wrapper">
                     <img class="card-img-top" src="/" alt="Car image">
                 </div>
@@ -30,11 +33,11 @@
 					Offer year Brand name Model name</h5>
                 </div>
                 <ul class="offer-details list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="card-text"><span>• Mileage</span></div>
-                        <div class="card-text"><span>• Price</span></div>
-                        <div class="card-text"><span>• Engine type</span></div>
-                        <div class="card-text"><span>• Transmission type</span></div>
+                    <li class="list-group-item" >
+                        <div class="card-text"><span th:text=" ${offer.mileage}"></span> mileage</div>
+                        <div class="card-text"><span th:text="${offer.price}"> </span> leva</div>
+                        <div class="card-text"><span th:text="${offer.engine}"> </span> engine</div>
+                        <div class="card-text"><span th:text="${offer.transmission} "> </span> transmission</div>
                     </li>
                 </ul>
                 <div class="card-body">
